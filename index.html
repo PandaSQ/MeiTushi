@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap4/bootstrap4/css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery-3.31.min.js"></script>
+		<script src="bootstrap4/bootstrap4/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<style type="text/css">
+			.ddd  {
+				width: 14%;
+				text-align: center;
+			}
+			.bg-pat{
+				background: url(img/promo_banner_bg.jpg) no-repeat;
+			}
+			.aaaa{
+				background: url(img/footer.jpg) no-repeat;
+			}
+			ul {
+				list-style: none;
+				padding-left: 0px;
+			}
+			.foot-foot>li{
+				border-bottom:1px solid #4c516f;
+				line-height: 50px;
+			}
+			.foot-foot a{
+				color: #FFFFFF;
+			}
+			.foot-foot a:hover {
+				text-decoration:none;
+				color: #FFFFFF;
+			}
+			.bian {
+				color: #191919;
+				text-decoration: none;
+			}
+			.bian:hover{
+				color: #ff9900;!important
+				text-decoration: none;!important
+				
+			}
+			.daohang li {
+				/*width: 14.2%;*/
+				padding: 0px 3.8%;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container-fluid" style="background: red;">
+			<div class="container">
+				<div class="row">
+					<div class="col-11" style="line-height: 30px;color: #fff;">
+						欢迎访问深圳美图视显示设备有限公司官方网站
+					</div>
+					<div class="col-1" style="line-height: 30px;color: #fff;">
+						<a href="Login.html" style="text-decoration: none; color: #fff;">
+							<i class="fa fa-user-o" aria-hidden="true"></i>&nbsp; 登陆
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sticky-top mt-0" style="background-color: #FFFFFF;border-top: 0px solid #e9e9e9;box-shadow: 0 -1px #fff;">
+		<div class="container pt-3">
+			<div class="row">
+				<div class="col"><img style="width: 100%;" src="img/logo.png" /></div>
+				<div class="col"></div>
+				<div class="col d-none d-xl-block">
+					<div class="row">
+						<div class="col-lg-2"><i class="fa fa-phone pt-3" aria-hidden="true" style="color: red;"></i></div>
+						<div class="col-lg-10">
+							咨询服务电话M:13692128986
+						</div>
+					</div>
+				</div>
+				<div class="col d-none d-xl-block">
+					<div class="row">
+						<div class="col-lg-2"><i class="fa fa-envelope pt-3" aria-hidden="true" style="color: red;"></i></div>
+						<div class="col-lg-10">
+							<div>szmts@163.com</div>
+							<div>随时欢迎您的来信！</div>
+						</div>
+					</div>
+				</div>
+				<div class="col d-none d-xl-block">
+					<div class="row">
+						<div class="col-lg-2"><i class="fa fa-university pt-3" aria-hidden="true" style="color: red;"></i></div>
+						<div class="col-lg-10">
+							深圳市宝安区福永街道 塘尾工业大道汇发科技园C座A
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container-fluid mt-3" style="border-top: 1px solid #e9e9e9;box-shadow: 0 1px 3px #e9e9e9;">
+			<div class="container">
+			<div class="row" style="height: 70px; ;">
+				<nav class="navbar navbar-expand-lg navbar-light p-0 border-0" style="width: 100%;">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: 100%;">
+						<ul class="navbar-nav mr-auto m-0 daohang text-center bg-white" style="width: 100%;">
+							
+							<!--<div class="col ddd">
+								<li class="nav-item active">
+									<a class=" bian" href="Login.html">首页 <span class="sr-only">(current)</span></a>
+								</li>
+								</div>
+								<div class="col ddd">
+									<li class="nav-item active">
+										<a class=" bian" href="AboutUs.html">关于我们</a>
+									</li>
+								</div>
+								<div class="col ddd">
+									<li class="nav-item dropdown active">
+										<a class=" dropdown-toggle bian" href="ProductList.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+											产品中心
+										</a>
+										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+											<a class="dropdown-item" href="#">拼接屏</a>
+											<div class="dropdown-divider"></div>
+											<a class="dropdown-item" href="#">显示器</a>
+											<div class="dropdown-divider"></div>
+											<a class="dropdown-item" href="#">网络版广告机</a>
+											<div class="dropdown-divider"></div>
+											<a class="dropdown-item" href="#">单机版广告机</a>
+											<div class="dropdown-divider"></div>
+											<a class="dropdown-item" href="#">安卓触摸一体机</a>
+											<div class="dropdown-divider"></div>
+											<a class="dropdown-item" href="#">Windows触摸一体机</a>
+										</div>
+									</li>
+							</div>
+							<div class="col ddd">
+								<li class="nav-item dropdown active">
+								<a class=" dropdown-toggle bian" href="SuccessCases.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+									成功案例
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">政府机关</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">医疗单位</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">教育培训</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">商场百货</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">企业公司</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">其他</a>
+								</div>
+							</li>
+							</div>
+							<div class="col ddd">
+								<li class="nav-item active">
+								<a class=" bian" href="Solution.html">解决方案</a>
+							</li>
+							</div>
+							<div class="col-lg ddd">
+								<li class="nav-item active">
+								<a class=" bian" href="NewsCenter.html">新闻中心</a>
+							</li>
+							</div>
+							<div class="col ddd">
+								<li class="nav-item active">
+								<a class=" bian" href="ContactUs.html">联系我们</a>
+							</li>
+							</div>-->
+							
+							
+							<li class="nav-item active">
+								<a class="nav-link bian" href="Login.html">首页 <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link bian" href="AboutUs.html">关于我们</a>
+							</li>
+							<li class="nav-item dropdown active">
+								<a class="nav-link dropdown-toggle bian" href="ProductList.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									产品中心
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">拼接屏</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">显示器</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">网络版广告机</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">单机版广告机</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">安卓触摸一体机</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">Windows触摸一体机</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown active">
+								<a class="nav-link dropdown-toggle bian" href="SuccessCases.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+									成功案例
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">拼接屏</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">显示器</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">网络版广告机</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">单机版广告机</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">安卓触摸一体机</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">Windows触摸一体机</a>
+								</div>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link bian" href="Solution.html">解决方案</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link bian" href="NewsCenter.html">新闻中心</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link bian" href="ContactUs.html">联系我们</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		</div>
+		</div>
+
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+			<!-- 指示符 -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+
+			<!-- 轮播图片 -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/slide_simple_bg2.jpg" style="width: 100%;">
+				</div>
+				<div class="carousel-item">
+					<img src="img/slide_simple_bg3.jpg" style="width: 100%;">
+				</div>
+				<div class="carousel-item">
+					<img src="img/slide_simple_bg31.jpg" style="width: 100%;">
+				</div>
+			</div>
+
+			<!-- 左右切换按钮 -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+
+		<div class="container-fluid">
+			<div class="container mt-4">
+				<div class="row">
+					<div class="col"><center><h1>美图视优势</h1></center></div>
+				</div>
+				<div class="row mt-3">
+					<div class="col" style="text-indent: 2em;"> 深圳美图视专注于多媒体显示技术领域的研究，专
+						业从事多媒体显示产品及系统解决方案的研发。经过不断地探索学习
+						、资源整合，现已发展成为一家集研发、制造、销售、服务于一体的
+						高新技术企业。目前已拥有包括DID液晶拼接墙系列、专业液晶监视器
+						系列、表面光波触摸一体机系列、专业液晶广告机系列、公共信息发布系
+						统等产品。产品主要用于安防监控，电力、边防、矿山、银行监控中心、公共场所、娱乐场所、政府部门等领域。</div>
+				</div>
+				<div class="row text-center" style="margin-top:80px ;">
+					<div class="col-lg-3">
+						<div class="mb-2"><img src="img/f01.jpg"/></div>
+						<h5><b>专注商用显示领域18年</b></h5>
+						<div>公司拥有深厚的技术积累和产品研发经验，拥有多项自主知识产权和技术专利</div>
+					</div>
+					<div class="col-lg-3">
+						<div><img src="img/f02.jpg"/></div>
+						<h5><b>集研发、制造、销售、服务与一体</b></h5>
+						<div>专注于多媒体显示技术领域的研究，商用显示解决方案专家。</div>
+					</div>
+					<div class="col-lg-3">
+						<div><img src="img/f03.jpg"/></div>
+						<<h5><b>信誉为本，全面贯彻ISO质理体系</b></h5>
+						<div>整个适配过程可视化，集成手机模拟器，可以快速的开发调试</div>
+					</div>
+					<div class="col-lg-3">
+						<div><img src="img/f04.jpg"/></div>
+						<h5><b>服务为先,助力客户创造价值</b></h5>
+						<div>7X24小时服务体系，遍布全国集后服务网点</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<center><button class="btn btn-info mt-5" style="border-radius: 5px;">MORE>></button></center>
+					</div>
+				</div>
+				
+				<center class="mt-5"><div>
+					<span class="h1">重点推荐:</span>
+					<span style="color: #DC3545;font-size:30px;font-weight: 300px;">1.7mm</span>
+					<span class="h1">拼缝拼接屏</span>
+				</div>
+				<button class="mt-3" style="border-radius: 15px;background-color: #fcc402;border: 0px;">精工视界，双边拼接最低17MM</button>
+				</center>
+			</div>
+			<div class="row mt-5" style="background: url(img/promo_detailed_bg.jpg) no-repeat ;">
+				<div class="col" style="background: #f8f9fb ;">
+					<div class="row mt-4">
+						<div class="col"><i class="fa fa-diamond mt-3" aria-hidden="true" style="color: red;border: solid 2px red;padding: 7px;font-size: 35px;float: right;">
+						</i></div>
+						<div class="col">
+							<b>极致拼缝，让视界完全呈现</b>
+							<div>超窄边框设计，双边拼接最低仅1.7MM，采用3D数字化图像处理内核真实还原现场,精确监控更多细节</div>
+						</div>
+					</div>
+					<div class="row mt-5">
+						<div class="col"><i class="fa fa-tree mt-3" aria-hidden="true" style="color: red;border: solid 2px red;padding: 7px;font-size: 35px;float: right;">
+						</i></div>
+						<div class="col">
+							<b>极致拼缝，让视界完全呈现</b>
+							<div>超窄边框设计，双边拼接最低仅1.7MM，采用3D数字化图像处理内核真实还原现场,精确监控更多细节</div>
+						</div>
+					</div>
+					<div class="row mt-5">
+						<div class="col"><i class="fa fa-tree mt-3" aria-hidden="true" style="color: red;border: solid 2px red;padding: 7px;font-size: 35px;float: right;">
+						</i></div>
+						<div class="col">
+							<b>极致拼缝，让视界完全呈现</b>
+							<div>超窄边框设计，双边拼接最低仅1.7MM，采用3D数字化图像处理内核真实还原现场,精确监控更多细节</div>
+						</div>
+					</div>
+					<br />
+				</div>
+				<div class="col d-none d-xl-block" style="padding:40px;">
+					<div  style="width: 430px;background-color: #353a40;color: white;padding: 15px;margin-left: 90px;">
+						工业级设计,满足各种环境长时间稳定工作。超窄边框设计，双边拼接最低仅1.7MM。
+					</div>
+					<center class="mt-5">
+						<button class="btn btn-danger">马上量身定制</button>
+					</center>
+				</div>
+			</div>
+		</div>	
+		<br /><br /><br /><br />
+		<div class="container-fluid">
+			<div class="container mt-5">
+				<center>
+					<h1>我们的服务</h1>
+					<div class="mt-3" style="font-size: 20px;line-height: 30px;">坚持自信、诚信；用心、创新的服务宗旨，在前进的道路上积极进行改革创新，不断调整产品结构，品牌战略，</br>
+竭诚与国内外客商及社会各界人士携手并进，引领科技，共创辉煌！</div>
+				</center>
+				<div class="row">
+				<div class="col-lg-3 my-2">
+					<div class="border shadow text-center">
+						<div class="my-4">
+							<h1><i class="fa fa-user text-info"></i></h1>
+						</div>
+						<div class="my-3">
+							<h5> 工程师一对一对接服务</h5>
+						</div>
+
+						<p class="my-4 p-3">专案工程师为您提供专业，详尽、完全无忧的设计方案等</p>
+					</div>
+				</div>
+			<div class="col-lg-3 my-2">
+					<div class="border shadow text-center">
+						<div class="my-4">
+							<h1><i class="fa fa-user text-info"></i></h1>
+						</div>
+						<div class="my-3">
+							<h5> 工程师一对一对接服务</h5>
+						</div>
+
+						<p class="my-4 p-3">专案工程师为您提供专业，详尽、完全无忧的设计方案等</p>
+					</div>
+				</div>
+			<div class="col-lg-3 my-2">
+					<div class="border shadow text-center">
+						<div class="my-4">
+							<h1><i class="fa fa-user text-info"></i></h1>
+						</div>
+						<div class="my-3">
+							<h5> 工程师一对一对接服务</h5>
+						</div>
+
+						<p class="my-4 p-3">专案工程师为您提供专业，详尽、完全无忧的设计方案等</p>
+					</div>
+				</div>
+				<div class="col-lg-3 my-2">
+					<div class="border shadow text-center">
+						<div class="my-4">
+							<h1><i class="fa fa-user text-info"></i></h1>
+						</div>
+						<div class="my-3">
+							<h5> 工程师一对一对接服务</h5>
+						</div>
+
+						<p class="my-4 p-3">专案工程师为您提供专业，详尽、完全无忧的设计方案等</p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<br /><br /><br /><br />
+		<div class="container-fluid bg-pat px-0">
+			<div style="background: #001;opacity: 0.6;">
+				<div class="container text-white">
+					<div class="row">
+						<div class="col">
+							<div class="my-23 text-center">
+								<h2 style="margin: 80px;">我们的合作伙伴</h2>
+							</div>
+							<p class="text-center" style="margin-bottom:65px ;">多年来，美图视正用自己的技术力量一步一步改变世界。<br />
+我们开创了中国首个框架式、开合式无障碍拼接屏安装解决方案，我们是全球独一无二的<br />
+云适配技术使拼接与商业显示更加专业与易于使用，我们的目标是打造极致的商业显示体验。<br />
+							</p>
+							<div class="text-center" style="margin-bottom: 80px;">
+								<button class="btn btn-info">MORE>></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br />
+		<div class="container d-none d-xl-block">
+			<div class="row ">
+				<div class="col pdd"><img  src="img/MA.png"/></div>
+				<div class="col pdd"><img src="img/SA.png"/></div>
+				<div class="col pdd"><img src="img/PA.png"/></div>
+				<div class="col pdd"><img src="img/TA.png"/></div>
+				<div class="col pdd"><img src="img/SA.png"/></div>
+				<div class="col pdd"><img src="img/HA.png"/></div>
+			</div>
+		</div>
+		
+		
+		<br /><br />
+		<div class="container-fluid" style="background-image: url(img/pattern-light.png);">
+			<br /><br /><br />
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 my-2">
+						<div class="border shadow text-center" style="background-color: #FFFFFF;">
+							<div class="my-4">
+								<h1><i class="fa fa-phone text-info"></i></h1>
+							</div>
+							<div class="mt-4">
+								<h5>联系我们</h5>
+							</div>
+							<p class="my-5">免费咨询电话</p>
+							<div class="my-5">M:13692128986 <br /> 周一-周日, 8am - 7pm</div>
+							<div><button class="btn btn-info mb-5">立即致电</button></div>
+						</div>
+					</div>
+					<div class="col-lg-4 my-2">
+						<div class="border shadow text-center" style="background-color: #FFFFFF;">
+							<div class="my-4">
+								<h1><i class="fa fa-envelope text-info"></i></h1>
+							</div>
+							<div class="mt-4">
+								<h5>联系我们</h5>
+							</div>
+							<p class="my-5">免费咨询电话</p>
+							<div class="my-5">M:13692128986 <br /> 周一-周日, 8am - 7pm</div>
+							<div><button class="btn btn-info mb-5">立即致电</button></div>
+						</div>
+					</div>
+					<div class="col-lg-4 my-2">
+						<div class="border shadow text-center" style="background-color: #FFFFFF;">
+							<div class="my-4">
+								<h1><i class="fa fa-map-marker text-info"></i></h1>
+							</div>
+							<div class="mt-4">
+								<h5>联系我们</h5>
+							</div>
+							<p class="my-5">免费咨询电话</p>
+							<div class="my-5">M:13692128986 <br /> 周一-周日, 8am - 7pm</div>
+							<div><button class="btn btn-info mb-5">立即致电</button></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br /><br /><br /><br />
+		</div>
+		
+		
+		<div class="container-fluid aaaa" style="margin: 0px;padding: 0px;">
+			<div style="background: #3d4164;opacity: 0.8;">
+				<div class="container">
+					<div class="row">
+						<div class="col" style="color: #FFFFFF;">
+							<h5 class="my-5">关于我们</h5>
+							<div>
+							深圳美图视专注于多媒体显示技术领域的研究，专业从事多媒体显示产品及系统解决方案的研发。
+							经过不断地探索学习、资源整合，现已发展成为一家集研发、制造、销售、服务于一体的高新技术企业
+							</div>
+							<div>
+							
+							</div>
+						</div>
+						<div class="col d-none d-xl-block"style="color: #FFFFFF;">
+							<h5 class="my-5">产品中心</h5>
+							<ul class="foot-foot">
+								<li><a href="#">拼接屏</a><i style="float: right;">></i></li>
+								<li><a href="#">监视器</a><i style="float: right;">></i></li>
+								<li><a href="#">网络版广告机</a><i style="float: right;">></i></li>
+								<li><a href="#">单机版广告机</a><i style="float: right;">></i></li>
+								<li><a href="#">安卓触摸一体机</a><i style="float: right;">></i></li>
+								<li><a href="#">Windows触摸一体机</a><i style="float: right;">></i></li>
+							</ul>
+						</div>
+						<div class="col d-none d-xl-block"style="color: #FFFFFF;">
+							<h5 class="my-5">成功案例</h5>
+							<ul class="foot-foot">
+								<li><a href="#">政府机关</a><i style="float: right;">></i></li>
+								<li><a href="#">医疗单位</a><i style="float: right;">></i></li>
+								<li><a href="#">教育培训</a><i style="float: right;">></i></li>
+								<li><a href="#">商场百货</a><i style="float: right;">></i></li>
+								<li><a href="#">企业公司</a><i style="float: right;">></i></li>
+								<li><a href="#">其他</a><i style="float: right;">></i></li>
+							</ul>
+						</div>
+						<div class="col d-none d-xl-block" style="color: #FFFFFF;">
+							<h5 class="my-5">联系详情</h5>
+							<div class="mt-3">
+								<i class="fa fa-phone"></i>
+								<span class="mr-1">服务专线:</span>
+								<b class="mr-1"style="color: red;">13692128986</b>
+							</div>
+							<div class="mt-3">
+								<i class="fa fa-envelope"></i>
+								<span class="mr-1">szmts@163.com</span>
+							</div>
+							<div class="mt-3">
+								<i class="fa fa-university"></i>
+								<span class="mr-1">深圳市宝安区福永街道塘尾工业大道汇发科技园C座A</span>
+							</div>
+							<div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<script type="text/javascript">
+	
+	$(".pdd>img").on("mouseenter",function(){
+		$(this).attr("src",$(this).attr("src").replace("A.","B."));
+	}).on("mouseleave",function(){
+		$(this).attr("src",$(this).attr("src").replace("B.","A."));
+	})
+		
+	//把其中click.bs.dropdown.data-api事件关闭
+	$(document).ready( function (){
+     $(document).off( 'click.bs.dropdown.data-api' );
+	});
+	
+		/**
+		* 鼠标划过就展开子菜单，免得需要点击才能展开
+		*/
+		dropdownOpen();
+			//设置鼠标悬停展开下拉菜单
+        function dropdownOpen(){
+            $('.dropdown').mouseover(function(){
+            	console.log("aaa");
+                $(this).addClass('show');
+                //查找当前元素子节点中的对象，修改其class
+                //这样当有多个下拉菜单时，可以分别独立处理，而不会出现都下拉的bug
+                $(this).find(".dropdown-menu").addClass('show');
+            }).mouseout(function(){
+                $(this).find(".dropdown-menu").removeClass('show');
+                $(this).removeClass('show');
+            });
+        }
+        
+</script>
+	</body>
+
+</html>

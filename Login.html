@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>深圳美图视显示设备官方网站</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="bootstrap4/bootstrap4/css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery-3.31.min.js"></script>
+		<script src="bootstrap4/bootstrap4/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+		<style type="text/css">
+			#beijin {
+				background: url(img/login_bg.png) no-repeat center top;
+				margin: auto 0px;
+			}
+			
+			#top1 {
+				color: #fff;
+				padding-top: 20px;
+				font-size: 25px;
+				text-align: center;
+			}
+			
+			.logo-in {
+				background: url(img/login_form_bg2.jpg) no-repeat;
+				padding: 20px;
+				margin: 15px;
+				border-radius: 10px;
+			}
+			
+			.logo-in button {
+				margin-top: 40px;
+			}
+			
+			#foot {
+				background-color: #1995f7;
+				color: #FFFFFF;
+				line-height: 80px;
+			}
+		</style>
+	</head>
+
+	<body onresize="word()">
+		<div class="container-fluid" id="beijin">
+			<div class="row">
+				<div class="col-lg-12" id="top1">
+					<div class="d-lg-block d-none"><h1>欢迎登陆深圳美图视显示设备官方网站</h1></div>
+					<div class="d-lg-none">
+						<h3><div>深圳美图视显示设备官方网站</div></h3>
+						<h2><div>欢迎登陆</div></h2>
+					</div>
+				</div>
+
+				<div class="col-lg-4 hidden-xs"></div>
+				<div class="col-lg-4 " id="logo">
+					<div class="logo-in" id="biaodan">
+						<center>
+							<h3>用户登录</h3>
+							<hr/>
+						</center>
+						
+						<form action="./ProductManagement.html" method="get">
+							<div class="form-group ">
+								<label for="exampleInputEmail1">账号</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="请在输入账号">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">密码</label>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码">
+							</div>
+							<div class="checkbox">
+								<label style="float: right;">
+						      <input type="checkbox" > 记住我
+						    </label>
+							</div>
+							<center><button type="submit" class="btn btn-primary">登录</button></center>
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-4  hidden-xs"></div>
+
+				<div class="col-lg-12" id="top2"></div>
+				<div class="col-lg-12" id="foot">
+					<center>版权所有，欢迎盗版</center>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			function word() {
+				var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+				var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+				document.getElementById("top1").style.height = (h * 0.2) + "px";
+				document.getElementById("top2").style.height = (h * 0.2) + "px";
+				document.getElementById("logo").style.height = (h * 0.5) + "px";
+				document.getElementById("biaodan").style.height = (h * 0.5) + "px";
+				document.getElementById("foot").style.height = (h * 0.1) + "px";
+			}
+			word();
+		</script>
+	</body>
+
+</html>

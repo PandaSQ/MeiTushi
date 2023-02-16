@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html class="h-100">
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="bootstrap4/bootstrap4/css/bootstrap.min.css"/>
+		<script src="js/jquery-3.31.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap4/bootstrap4/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css"/>
+		<script type="text/javascript" src="./tinymce/js/tinymce/tinymce.min.js"></script>
+		
+		
+		<style>
+			.bg-top {
+				background: #17a2b8;
+				color: #FFFFFF;
+			}
+			
+			.bg-left {
+				background: #222d31;
+				color: #FFFFFF
+			}
+			
+			.bg-foot {
+				background: #17a2b8;
+				color: #FFFFFF;
+			}
+			
+			.card-header {
+				padding: 0px;
+				padding-left: 10px;
+				background: #06394b;
+			}
+			
+			.mylink {
+				text-decoration: none;
+				color: #FFFFFF;
+			}
+			
+			.mylink:hover {
+				color: #FF0000;
+				font-weight: bold;
+			}
+			
+			.file {
+				position: relative;
+				display: inline-block;
+				background: #D0EEFF;
+				border: 1px solid #99D3F5;
+				border-radius: 4px;
+				padding: 4px 12px;
+				overflow: hidden;
+				color: #1E88C7;
+				text-decoration: none;
+				text-indent: 0;
+				line-height: 20px;
+			}
+			
+			.file input {
+				position: absolute;
+				font-size: 100px;
+				right: 0;
+				top: 0;
+				opacity: 0;
+			}
+			
+			.file:hover {
+				background: #AADFFD;
+				border-color: #78C3F3;
+				color: #004974;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+
+	<body class="h-100">
+		
+		<div class="container-fluid p-0 h-100 d-flex flex-column">
+			<div class="py-3 bg-top">
+				<h4>深圳美图视后台管理系统</h4>
+			</div>
+			<div class="row h-100 p-0 m-0">
+				<div class="col-lg-2 bg-left p-0 left_area">
+					<div class="accordion" id="accordionExample">
+						<div class="card border-0">
+							<div class="card-header" id="headingOne">
+								<h2 class="mb-0">
+        <button class="btn mylink" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          基础信息
+        </button>
+        
+        <i class="fa fa-arrow-circle-left pull-right pt-3 pr-2 btn_hide"
+        	style="color: #FFFFFF;font-size: 20px;"></i>
+      </h2>
+							</div>
+
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div class="card-body" style="background: #394750;">
+									<ul class="list-unstyled">
+										<li class="pl-3">
+											<a href="ProductManagement.html" class="text-white">
+												<i class="fa fa-life-buoy"></i>栏目管理</a>
+										</li>
+										<li class="pl-3">
+											<a href="ArticleRelease
+.html" class="text-white">
+												<i class="fa fa-life-buoy"></i>产品添加</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-header" id="headingTwo">
+								<h2 class="mb-0">
+        <button class="btn mylink collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          业务处理
+        </button>
+      </h2>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+								<div class="card-body" style="background: #394750;">
+									子菜单
+								</div>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-header" id="headingThree">
+								<h2 class="mb-0">
+        <button class="btn mylink collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          系统设置
+        </button>
+      </h2>
+							</div>
+							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+								<div class="card-body" style="background: #394750;">
+									子菜单
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-10 bg-white p-0 right_area">
+					
+					<center>
+						<h4>文章栏目管理</h4>
+						<hr class="w-50" />
+					</center>
+					
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<table class="table table-striped table-bordered">
+									<thead>
+										<th>ID</th>
+										<th>栏目名称</th>
+										<th>路径</th>
+										<th>操作</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>
+												<span class="iconfont icon-caozuojiemiantubiao--_diankai"></span>
+												成功案例
+												<ul class="list-unstyled ml-3 gsjj">
+													<li>
+														<span class="iconfont icon-caozuojiemiantubiao--_duixiangshushuzhuangtu-"></span>拼接屏
+														<i class="fa fa-remove pull-right delsubmenu" style="color: #FF0000;"></i>
+													</li>
+													<li>
+														<span class="iconfont icon-caozuojiemiantubiao--_duixiangshushuzhuangtu-"></span>监视器
+														<i class="fa fa-remove pull-right delsubmenu" style="color: #FF0000;"></i>
+													</li>
+													<li>
+														<span class="iconfont icon-caozuojiemiantubiao--_duixiangshushuzhuangtu-"></span>网络版广告机
+														<i class="fa fa-remove pull-right delsubmenu" style="color: #FF0000;"></i>
+													</li>
+													<li>
+														<span class="iconfont icon-caozuojiemiantubiao--_duixiangshushuzhuangtu-"></span>单机版广告机
+														<i class="fa fa-remove pull-right delsubmenu" style="color: #FF0000;"></i>
+													</li>
+													<li>
+														<span class="iconfont icon-caozuojiemiantubiao--_duixiangshushuzhuangtu-"></span>安卓触摸一体机
+														<i class="fa fa-remove pull-right delsubmenu" style="color: #FF0000;"></i>
+													</li>
+													<li>
+														<span class="iconfont icon-caozuojiemiantubiao--_duixiangshushuzhuangtu-"></span>Windows触摸一体机
+														<i class="fa fa-remove pull-right delsubmenu" style="color: #FF0000;"></i>
+													</li>
+												</ul>
+											</td>
+											<td>/</td>
+											<td>
+												<button class="btn btn-primary addlm" tag="gsjj" data-toggle="modal" data-target="#dialog">添加子栏目</button>
+												<button class="btn btn-danger delallsumbmenu" tag="gsjj">删除</button>
+												<button class="btn btn-info">修改</button>
+											</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>
+												<span class="iconfont icon-caozuojiemiantubiao--_diankai"></span>
+												成功案例
+												<ul class="list-unstyled ml-3 ywcl">
+													<li>
+														<span class="iconfont icon-caozuojiemiantubiao--_duixiangshushuzhuangtu-"></span>政府机关
+														<i class="fa fa-remove pull-right delsubmenu" style="color: #FF0000;"></i>
+													</li>
+													<li>
+														<span class="iconfont icon-caozuojiemiantubiao--_duixiangshushuzhuangtu-"></span>医疗单位
+														<i class="fa fa-remove pull-right delsubmenu" style="color: #FF0000;"></i>
+													</li>
+													<li>
+														<span class="iconfont icon-caozuojiemiantubiao--_duixiangshushuzhuangtu-"></span>教育培训
+														<i class="fa fa-remove pull-right delsubmenu" style="color: #FF0000;"></i>
+													</li>
+													<li>
+														<span class="iconfont icon-caozuojiemiantubiao--_duixiangshushuzhuangtu-"></span>商场百货
+														<i class="fa fa-remove pull-right delsubmenu" style="color: #FF0000;"></i>
+													</li>
+													<li>
+														<span class="iconfont icon-caozuojiemiantubiao--_duixiangshushuzhuangtu-"></span>企业公司
+														<i class="fa fa-remove pull-right delsubmenu" style="color: #FF0000;"></i>
+													</li>
+													<li>
+														<span class="iconfont icon-caozuojiemiantubiao--_duixiangshushuzhuangtu-"></span>其他
+														<i class="fa fa-remove pull-right delsubmenu" style="color: #FF0000;"></i>
+													</li>
+												</ul>
+											</td>
+											<td>/</td>
+											<td>
+												<button class="btn btn-primary addlm" tag="ywcl" data-toggle="modal" data-target="#dialog">添加子栏目</button>
+												<button class="btn btn-danger delallsumbmenu" tag="ywcl">删除</button>
+												<button class="btn btn-info">修改</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="bg-foot py-2 text-white">
+				<center>
+					<h6>版权所有，欢迎盗版</h6></center>
+			</div>
+			
+			
+			<div class="modal fade" id="dialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">提示</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+						</div>
+						<div class="modal-body">
+							<div class="container">
+								<div class="row">
+									<label>栏目名称</label>
+									<input type="text" class="form-control" id="new_neirong" />
+									<input type="hidden" id="lmmc" />
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+							<button type="button" class="btn btn-primary mstj">马上添加</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<script>
+			$(".btn_hide").on("click", function() {
+				$(".left_area").hide();
+				$(".right_area").removeClass("col-lg-10");
+				$(".right_area").addClass("col-lg-12");
+			});
+			$(".btn_show").on("click", function() {
+				$(".left_area").show();
+				$(".right_area").removeClass("col-lg-12");
+				$(".right_area").addClass("col-lg-10");
+			});
+			 function showImg(obj) {
+            var file=$(obj)[0].files[0];
+            var imgdata='';
+            if(file)
+            {
+                var reader=new FileReader();
+                reader.readAsDataURL(file); 
+                reader.onload=function(evt){ 
+                    $("#previmg").attr('src',evt.target.result) 
+                };
+            }
+            else{
+                alert("上传失败");
+            }
+        }
+			 
+		$(".btn_hide").on("click", function() {
+				$(".left_area").hide();
+				$(".right_area").removeClass("col-lg-10");
+				$(".right_area").addClass("col-lg-12");
+			});
+			$(".btn_show").on("click", function() {
+				$(".left_area").show();
+				$(".right_area").removeClass("col-lg-12");
+				$(".right_area").addClass("col-lg-10");
+			});
+			
+			$(".addlm").on("click",function(){
+				tag=$(this).attr("tag");
+				console.log(tag);
+				$("#lmmc").val(tag);
+			}); 
+			$(".mstj").on("click",function(){
+				console.log("aaa");
+				tag=$("#lmmc").val();
+				new_neirong=$("#new_neirong").val();
+				h='<li><span class="iconfont icon-caozuojiemiantubiao--_duixiangshushuzhuangtu-"></span>'+new_neirong+'<i class="fa fa-remove pull-right delsubmenu" style="color: #FF0000;"></i></li>'
+				$("."+tag).append(h);
+				$("#dialog").modal("hide");
+			});
+			$(".delsubmenu").on("click",function(){
+				$(this).parent("li").remove();
+			});
+			$(".delallsumbmenu").on("click",function(){
+				tag=$(this).attr("tag");
+				$("."+tag+">li").remove();
+			});	 
+	 
+		</script>
+	</body>
+
+</html>
